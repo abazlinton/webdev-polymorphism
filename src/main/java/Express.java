@@ -2,7 +2,10 @@ public class Express implements IService, IWebServer {
 
     @Override
     public String get(String resource){
-        return "<h1>Hello World</h1>";
+        if (resource.equals("/")){
+            return "<h1>Hello World</h1>";
+        }
+        return "";
     }
 
     @Override
